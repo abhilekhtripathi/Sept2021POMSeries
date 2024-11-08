@@ -18,7 +18,7 @@ public class AccountsPage {
 	private By header = By.cssSelector("div#logo a");
 	private By accountsSections = By.cssSelector("div#content h2");
 	private By searchField = By.name("search");
-	private By searchButton = By.cssSelector("div#search Button");
+	private By searchButton = By.cssSelector("div#search button");
 	private By logoutLink = By.linkText("Logout");
 
 	public AccountsPage(WebDriver driver) {
@@ -63,7 +63,7 @@ public class AccountsPage {
 
 	public SearchResultsPage doSearch(String productName) {
 		System.out.println("searching the product name :" + productName);
-		eleUtil.doActionsSendKeys(searchField, productName);
+		eleUtil.doSendKeys(searchField, productName);
 		eleUtil.doClick(searchButton);
 		return new SearchResultsPage(driver);
 	}

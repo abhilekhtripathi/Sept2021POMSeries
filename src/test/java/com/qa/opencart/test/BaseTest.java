@@ -16,12 +16,12 @@ public class BaseTest {
 	WebDriver driver;
 	Properties prop;
 	LoginPage loginPage;
-	AccountsPage accountPgae;
+	AccountsPage accountsPage;
 
 	@BeforeTest
 	public void setup() {
 		df = new DriverFactory();
-		     prop  =  df.inti_prop();
+		prop = df.inti_prop();
 		driver = df.inti_driver(prop);
 		loginPage = new LoginPage(driver);
 
@@ -30,7 +30,7 @@ public class BaseTest {
 	@AfterTest
 
 	public void tearDown() {
-		
+
 		driver.quit();
 
 	}

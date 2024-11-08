@@ -8,9 +8,7 @@
           <include name="setup"/>
           <include name="accPageHeaderTest"/>
           <include name="tearDown"/>
-          <include name="accPageSectionsTest"/>
-          <include name="accPageTitleTest"/>
-          <include name="isLogoutExistTest"/>
+          <include name="searchTest" invocation-numbers="2"/>
           <include name="accPageSetup"/>
         </methods>
       </class> <!-- com.qa.opencart.test.AccountsPageTest -->
