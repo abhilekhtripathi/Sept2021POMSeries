@@ -1,0 +1,1 @@
+{"uuid":"59325fec-64d1-439d-a95d-385bb023b836","name":"com.qa.opencart.test.AccountsPageTest","children":["131e41f5-3a00-475e-8374-e15a693e9ab6"],"befores":[{"name":"accPageSetup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1731043243200,"stop":1731043244230}],"afters":[],"start":1731043236295,"stop":1731043246179}

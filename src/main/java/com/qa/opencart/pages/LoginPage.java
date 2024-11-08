@@ -43,11 +43,12 @@ public class LoginPage {
 		return eleUtil.doIsDisplayed(registerLink);
 	}
 
-	public void doLogin(String un, String pwd) {
+	public AccountsPage doLogin(String un, String pwd) {
 		System.out.println("login With :" + un + " : " + pwd);
 		eleUtil.doSendKeys(emilId, un);
 		eleUtil.doSendKeys(password, pwd);
 		eleUtil.doClick(LoginBtn);
+		return new AccountsPage(driver);
 
 	}
 
