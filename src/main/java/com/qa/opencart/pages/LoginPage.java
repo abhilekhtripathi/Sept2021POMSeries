@@ -32,7 +32,7 @@ public class LoginPage {
 	}
 
 	public boolean getLoginPageUrl() {
-		return eleUtil.waitForTitleContains(Constants.LOGIN_PAGE_URL_FRACTION, Constants.DEFAULT_TIME_OUT);
+		return eleUtil.waitForURLToContain(Constants.LOGIN_PAGE_URL_FRACTION, Constants.DEFAULT_TIME_OUT);
 	}
 
 	public boolean isForgotPwdLinkExist() {
